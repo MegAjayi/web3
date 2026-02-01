@@ -159,4 +159,24 @@ section {
   .menuBotton {
     display: block;
   }
+  .sub_container {
+    display: block;
+  }
+  .page_img {
+    background-image: url(./assets/images/image-web-3-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  .text_div_wraper {
+    display: block;
+    margin-bottom: 10rem;
+  }
+  .new_content {
+    margin-top: 20rem;
+    height: 40rem;
+  }
+  section {
+    display: block;
+  }
 }
