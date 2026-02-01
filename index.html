@@ -10,36 +10,39 @@
 
 <body>
     <div class="main_container">
-        <div>
-            <header>
-                <nav>
-                    <div class="nav_logo">
-                        <img src="./assets/images/logo.svg" alt="logo">
-                    </div>
-                    <div class="navigation_links">
-                        <ol>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">New</a></li>
-                            <li><a href="">Popular</a></li>
-                            <li><a href="">Trending</a></li>
-                            <li><a href="">Cateloges</a></li>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSideBar()"><img src="./assets/images/icon-menu-close.svg" alt="logo"></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">New</a></li>
+                <li><a href="">Popular</a></li>
+                <li><a href="">Trending</a></li>
+                <li><a href="">Cateloges</a></li>
 
-                        </ol>
-                    </div>
-                </nav>
-            </header>
-        </div>
+            </ul>
+
+            <ul>
+                <li><img src="./assets/images/logo.svg" alt="logo"></li>
+                <li class="hideOnMobile"><a href="">Home</a></li>
+                <li class="hideOnMobile"><a href="">New</a></li>
+                <li class="hideOnMobile"><a href="">Popular</a></li>
+                <li class="hideOnMobile"><a href="">Trending</a></li>
+                <li class="hideOnMobile"><a href="">Cateloges</a></li>
+                <li onclick="showSidebar()" class="menuBotton"><img src="./assets/images/icon-menu.svg" alt=""></li>
+
+            </ul>
+        </nav>
         <div class="sub_container">
             <div class="main_content">
                 <div class="page_img">
-                    <img src="./assets/images/image-web-3-mobile.jpg" alt="">
+                    <!-- <img src="./assets/images/image-web-3-mobile.jpg" alt=""> -->
                 </div>
                 <div class="text_div_wraper">
                     <div>
-                        <h1>The Bright Future of Web 3.0?</h1>
+                        <h1 class="mainText">The Bright <br> Future of <br> Web 3.0?</h1>
                     </div>
                     <div>
-                        <p>
+                        <p class="mainparagraph">
                             We dive into the next evolution of the web that <br> claims to put the power of the
                             platforms
                             back <br> into the hands of the people.
@@ -102,6 +105,18 @@
 
     </div>
 
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSideBar() {
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.display = 'none'
+        }
+    </script>
 </body>
 
 </html>
