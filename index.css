@@ -21,6 +21,7 @@ body {
 nav {
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 4rem;
 }
 
 nav ul {
@@ -66,6 +67,10 @@ nav li:first-child {
   justify-content: flex-start;
 }
 
+.main_container {
+  padding: 5rem;
+}
+
 .sidebarli {
   width: 100%;
 }
@@ -81,17 +86,14 @@ nav li:first-child {
   width: 100%;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  background-color: red;
-  gap: 20px;
+  gap: 30px;
 }
 .main_content {
   height: 70rem;
-  background-color: aqua;
 }
 .page_img {
   height: 50rem;
   width: 100rem;
-  background-color: blue;
   background-image: url(./assets/images/image-web-3-desktop.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -116,6 +118,38 @@ button {
   width: 10rem;
   border: none;
   margin-top: 1.3rem;
+}
+.new_content {
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+
+.newH2 {
+  color: #ebb768;
+  font-size: 3rem;
+}
+section {
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-evenly;
+}
+.growthDiv {
+  display: flex;
+  justify-content: space-evenly;
+}
+.imgGrowthDiv {
+  height: 15rem;
+}
+.imgGrowthDiv3 {
+  padding-left: 2rem;
+}
+.red {
+  color: #f45b51;
+  font-size: 3rem;
 }
 
 @media (max-width: 800px) {
